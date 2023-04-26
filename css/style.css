@@ -1,0 +1,195 @@
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+
+    color: #333333;
+    font-size: 32px;
+
+}
+
+h2{
+    font-size: 24px;
+    margin: 0;
+}
+
+#result-imc{
+    background-color: #0B4F00;
+    color: white;
+    padding-bottom: 38px;
+    padding-right: 47px;
+    padding-left: 48px;
+    padding-top: 38px;
+    text-align: center;
+    visibility: hidden; /*deixa invisivel / escondido*/
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    dessa forma assim
+    */
+}
+
+p{
+
+    color: #666666;
+    font-size: 16px;
+}
+table{
+
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+th{
+    color: #FFFFFF;
+    background-color: #0A5FAE;    
+}
+
+tr{
+
+    color: #333333;
+    background-color: #DDDDDD;
+    height: 30px;
+    
+}
+
+/*Ao passar o mouse no seletor irá mudar a caixinha de cor ou algo que vc preferir*/
+tr:hover{
+    
+    background-color: #c9def1;
+
+}
+
+input{
+
+    width: 260px;
+    height: 30px;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    /*
+    border-style: 1px
+    border-width:display: solid
+    border-color: #CCCCCC
+    */
+}
+
+input:focus{
+
+    outline: none;
+    /*
+    border: 1px solid #0A5FAE
+    */
+
+}
+
+button{
+
+    color: white;
+    background-color: #0A5FAE;
+    padding: 6px 44px;
+    border: 1px solid #CCCCCC;
+    font-size: 16px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 3px #333333;
+}
+
+
+#header{
+
+    text-align: center;
+    background-color: #D2EAFF;
+    /* Padding --> Espaçamento interno */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#container{
+
+    /*Margem vertical (Top/Bottom) = 75
+    Margem Horizontal (Left/Right): auto, o que faz ir para o centro*/
+    margin: 75px auto;
+    width: 95%;
+    max-width: 1100px; /* largura maxima*/
+    display: flex;
+    justify-content: space-between; /*Distribui o espaço vazio entre os itens*/
+    align-items: center;
+    
+}
+
+#content{
+    width: 553px;
+}
+
+#flex-imc{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+#bottom{
+
+    text-align: center;
+    background-color: #D2EAFF;
+    /* Padding --> Espaçamento interno */
+    padding-bottom: 17px;
+    padding-top: 17px;
+    background-image: url();
+
+}
+
+@media (max-width: 1140px){
+
+    #image img{
+
+        width: 320px;
+    }
+
+    #content{
+        width: 450px;
+    }
+
+    #result-imc{
+        margin-left: 10px;
+    }
+
+    @media (max-width: 830px){
+
+        #container{
+            flex-direction: column;
+        }
+
+        #flex-imc{
+            flex-direction: column;
+        }
+
+        input{
+            width: 100%;
+        }
+
+        #result-imc{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        #image{
+            display: none; /*Retira o elemento da tela!!*/
+        }
+    }
+}
